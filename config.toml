@@ -1,0 +1,24 @@
+baseURL = "http://pabloos.github.gits/"
+languageCode = "en-us"
+title = "byBit"
+theme = "hyde-hyde"
+
+[params]
+    layoutReverse = false
+    description = "golang, docker and much more"
+    highlightjs = true
+    highlightjsstyle = "zenburn"
+    highlightjslanguages = ["go"]
+
+[params.social]
+    github = "pabloos"
+    linkedin = "pablocdiaz"
+    twitter = "PabloCDaz"
+    stackoverflow = "5510296/pablo-cumpián-díaz"
+    email = "pablocumpia@gmail.com"
+
+[[menu.main]]
+    name = "golang"
+    identifier = "go"
+    url = "/golang/"
+    weight = "1"
