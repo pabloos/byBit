@@ -1,4 +1,4 @@
-baseURL = "http://pabloos.github.io/"
+baseURL = "https://pabloos.github.io/"
 languageCode = "en-us"
 title = "byBit"
 theme = "hyde"
@@ -9,7 +9,7 @@ main = [
     {Name = "linkedin", URL = "https://www.linkedin.com/in/pablocdiaz"},
     {Name = "twitter", URL = "https://www.twitter.com/PabloCDaz"},
     {Name = "stackoverflow", URL = "https://stackoverflow.com/users/5510296/pablo-cumpi%c3%a1n-d%c3%adaz"},
-    {Name = "email", URL = "pablocumpia@gmail.com"},
+    # {Name = "email", URL = "pablocumpia@gmail.com"},
     {name = "golang", URL = "/golang/"}
 ]
 

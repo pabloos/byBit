@@ -4,7 +4,7 @@ date: 2019-07-28T13:53:54+02:00
 draft: false
 ---
 
-![pipelines](https://raw.githubusercontent.com/pabloos/pabloos.github.io/master/golang/pipelines.png?token=ACBPJY7IRZM2GGQDLJKLXT25KR7JQ)
+![pipelines](/static/pipelines.png)
 
 All the code used here is on my github: [pabloos](https://github.com/pabloos/my-go-pipeline-pattern). Keep an eye on it, for clarity I will not reference all the functions. Each section has his own branch.
 
