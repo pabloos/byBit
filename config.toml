@@ -5,12 +5,14 @@ theme = "hyde"
 
 [Menus]
 main = [
-    {Name = "github", URL = "https://www.github.com/pabloos"},
-    {Name = "linkedin", URL = "https://www.linkedin.com/in/pablocdiaz"},
+    {name = "concurrency", URL = "/concurrency/", weight = 1},
+    {name = "testing", URL= "/testing/", weight = 2},
+
+    {Name = "github", URL = "https://www.github.com/pabloos", weight = 10},
+    {Name = "linkedin", URL = "https://www.linkedin.com/in/pablocdiaz", weight = 9},
     {Name = "twitter", URL = "https://www.twitter.com/PabloCDaz"},
-    {Name = "stackoverflow", URL = "https://stackoverflow.com/users/5510296/pablo-cumpi%c3%a1n-d%c3%adaz"},
-    # {Name = "email", URL = "pablocumpia@gmail.com"},
-    {name = "golang", URL = "/golang/"}
+    # {Name = "stackoverflow", URL = "https://stackoverflow.com/users/5510296/pablo-cumpi%c3%a1n-d%c3%adaz"},
+    {Name = "email", URL = "mailto:pablocumpia@gmail.com"},
 ]
 
 [params]
@@ -23,16 +25,3 @@ main = [
     highlightjsstyle = "zenburn"
     highlightjslanguages = ["go"]
     postNavigation = true
-
-# [params.social]
-#     github = "pabloos"
-#     linkedin = "pablocdiaz"
-#     twitter = "PabloCDaz"
-#     stackoverflow = "5510296/pablo-cumpián-díaz"
-#     email = "pablocumpia@gmail.com"
-
-# [[menu.main]]
-#     name = "golang"
-#     identifier = "go"
-#     url = "/golang/"
-#     weight = "1"

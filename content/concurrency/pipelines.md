@@ -1,6 +1,6 @@
 ---
-title: "Pipelines: a refactor proposal"
-date: 2019-07-28T13:53:54+02:00
+title: "Pipelines"
+date: 2020-04-09T13:20:57+02:00
 draft: false
 ---
 
