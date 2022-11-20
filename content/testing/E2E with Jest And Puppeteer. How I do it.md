@@ -4,17 +4,17 @@ date: 2020-04-09T12:03:21+02:00
 draft: false
 ---
 
-As a backend developer E2E testing is a must for me. E2E testing does not check the features of the frontend only, it cares about the whole system. A good match for this purpose on Node it's the jest and puppeteer tandem for testing web apps.
+As a backend developer E2E testing is a must for me. E2E testing does not only check the features of the frontend, it cares about the whole system. A good match for this purpose on Node it's the jest and puppeteer tandem for testing web apps.
 
 (Note: From now on I assume that you have some experience with the API of both technologies)
 
 ### About the dependencies
 
-You will find a bunch of posts about this topic on the internet. Some will tell you to install jest-puppeteer, but I don't like the way it works and what it offers to you. jest-puppeteer it's a preset that will "insert" on your code a browser and a page objects already defined to use on your tests. That means two things: global symbols and a break in your storytelling: where the browser instance comes from? For this reason I prefer to define manually my browser and page instances.
+You will find a bunch of posts about this topic on the internet. Some will tell you to install _jest-puppeteer_, but I don't like the way it works and what it offers to you. _jest-puppeteer_ it's a preset that will "insert" on your code a browser and a page objects already defined to use on your tests. That means two things: global symbols and a break in your storytelling: where the browser instance comes from? For this reason I prefer to define manually my browser and page instances.
 
 ```javascript
 define('E2E test suite', () => {
-    let browser, page
+  let browser, page
 
   beforeAll(() => {
     browser = await puppeteer.launch(config)
@@ -23,13 +23,13 @@ define('E2E test suite', () => {
 })
 ```
 
-If you write this you're telling the story from the beginning: first, setup the environement. But there's another element that until now we're not showing: the server app. And there's when some people would tell you to use the built-in on the jest-puppeteer preset. It's usefull, as it run the server via a npm command for you... but you can do it by yourself (me neither want to exec a shell command from code, that feels tricky for me):
+If you write this you're telling the story from the beginning: first, setup the environement. But there's another element that until now we're not showing: the server app. And there's when some people would tell you to use the launher built-in on the _jest-puppeteer_ preset. It's usefull, as it run the server via a npm command for you... but you can do it by yourself (me neither want to exec a shell command from code, that feels tricky for me):
 
 ```javascript
 const app = require('./myApp')
 
 define('E2E test suite', () => {
-    let server, browser, page
+  let server, browser, page
 
   beforeAll(() => {
     server = await app.run()
@@ -144,7 +144,6 @@ Yeah, but it could be even better, Table-Driven Tests to the rescue!
 
     expect(result).toBe(testCase.expected)
   })
-
 ```
 
-This way you can define all of your tests cases on the table and use the same function on each of them. It's more legible, you decouple data and functionality.
+This way you can define all of your tests cases on the table and use the same function on each of them. It's more legible, you decouple data and functionality, and it allows you to add more tests cases with ease.

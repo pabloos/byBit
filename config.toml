@@ -1,13 +1,14 @@
 baseURL = "https://pabloos.github.io/"
 languageCode = "en-us"
-title = "byBit"
+title = "by bit"
 theme = "hyde"
+googleAnalytics = "UA-163718289-1"
 
 [Menus]
 main = [
     {name = "concurrency", URL = "/concurrency/", weight = 1},
     {name = "testing", URL= "/testing/", weight = 2},
-
+    {name = "languages", URL="/languages/", weight = 3},
     {Name = "github", URL = "https://www.github.com/pabloos", weight = 10},
     {Name = "linkedin", URL = "https://www.linkedin.com/in/pablocdiaz", weight = 9},
     {Name = "twitter", URL = "https://www.twitter.com/PabloCDaz"},
@@ -19,7 +20,7 @@ main = [
     layoutReverse = false
     themeColor = "theme-base-0f"
 
-    description = "golang, docker and much more"
+    description = "Pablo Cumpian, on software"
     highlightjs = true
     authorimage = "gopher.png"
     highlightjsstyle = "zenburn"
