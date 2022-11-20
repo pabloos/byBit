@@ -20,7 +20,7 @@ main = [
     layoutReverse = false
     themeColor = "theme-base-0f"
 
-    description = "Pablo Cumpian, on software"
+    description = "Composing software"
     highlightjs = true
     authorimage = "gopher.png"
     highlightjsstyle = "zenburn"
