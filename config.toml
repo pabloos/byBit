@@ -20,7 +20,6 @@ main = [
 [params]
     layoutReverse = false
     themeColor = "theme-base-0f"
-
     description = "Composing software"
     highlightjs = true
     authorimage = "gopher.png"
