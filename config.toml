@@ -1,14 +1,15 @@
 baseURL = "https://pabloos.github.io/"
 languageCode = "en-us"
-title = "by bit"
+title = "bytecora"
 theme = "hyde"
 googleAnalytics = "UA-163718289-1"
 
 [Menus]
 main = [
-    {name = "concurrency", URL = "/concurrency/", weight = 1},
-    {name = "testing", URL= "/testing/", weight = 2},
-    {name = "languages", URL="/languages/", weight = 3},
+    {name = "backend", URL = "/backend/", weight = 1},
+    {name = "concurrency", URL = "/concurrency/", weight = 2},
+    {name = "testing", URL= "/testing/", weight = 3},
+    {name = "languages", URL="/languages/", weight = 4},
     {Name = "github", URL = "https://www.github.com/pabloos", weight = 10},
     {Name = "linkedin", URL = "https://www.linkedin.com/in/pablocdiaz", weight = 9},
     {Name = "twitter", URL = "https://www.twitter.com/PabloCDaz"},
